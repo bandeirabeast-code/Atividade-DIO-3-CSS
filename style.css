@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/*===== HEADER =====*/
+.header {
+    width: 100%;
+    height: 60px;
+    background: #fff;
+    display: grid;
+    grid-template-columns: 200px 1fr 150px;
+    align-items: center;
+    padding: 0 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.logo img {
+    width: 100px;
+}
+
+.search-area input {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+}
+
+.user-icon {
+    background: #000;
+    color: #fff;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*===== SIDEBAR =====*/
+.sidebar {
+    position: fixed;
+    top: 60px;
+    left: 0;
+    width: 180px;
+    height: calc(100vh - 60px);
+    background: #fff;
+    border-right: 1px solid #ddd;
+    padding: 20px 0;
+}
+
+.sidebar .side-item {
+    padding: 12px 20px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.sidebar .side-item:hover {
+    background: #f0f0f0;
+}
+
+/*===== GRID DE VÍDEOS =====*/
+.videos-grid {
+    margin-left: 200px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 25px;
+}
+
+.card {
+    background: #fff;
+    padding-bottom: 10px;
+}
+
+.thumb {
+    width: 100%;
+    border-radius: 6px;
+}
+
+.title {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.channel, .views {
+    font-size: 14px;
+    color: #555;
+}
